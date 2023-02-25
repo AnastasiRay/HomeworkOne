@@ -11,7 +11,7 @@ step = search_angle / searches_nums
 
 plt.figure(figsize=(20, 20))
 
-for row in data[-10:]:
+for row in data:
     odom, lidar = row.split(';')
     odom = list(map(float, odom.split(', ')))
     lidar = list(map(float, lidar.split(', ')))
